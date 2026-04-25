@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Zoya Bibi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Hello, I'm Zoya</h1>
-    <p>This is my portfolio website</p>
+    <nav>
+        <div class="logo">ZB</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Zoya Bibi</span></h1>
+            <p>Computer Science Student & Aspiring Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>Ek awesome web application jo HTML aur CSS se bani hai.</p>
+                <a href="#" class="project-link">Source Code</a>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Portfolio website jo GitHub Pages par hosted hai.</p>
+                <a href="#" class="project-link">Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+            <p>Email: <strong>fa24b1-cs-056@fjwu.edu.pk</strong></p>
+            <div class="socials">
+                <a href="https://github.com/fa24b1-cs-056-eng">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zoya Bibi. Built with ❤️ on GitHub Pages.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
