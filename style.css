@@ -1,6 +1,7 @@
+/* Navigation Updated */
 nav {
     display: flex;
-    justify-content: center; /* This centers the links since the logo is gone */
+    justify-content: center; /* Menu center mein karne ke liye */
     align-items: center;
     padding: 20px 10%;
     background: #2c3e50;
@@ -13,10 +14,9 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Links ke darmiyan barabar space */
 }
