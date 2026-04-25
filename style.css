@@ -1,21 +1,7 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #f4f7f6;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Navigation */
+/* Navigation Updated */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Menu center mein karne ke liye */
     align-items: center;
     padding: 20px 10%;
     background: #2c3e50;
@@ -28,112 +14,9 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #3498db;
-}
-
-/* Hero Section */
-.hero {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
-                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
-    background-size: cover;
-    color: white;
-}
-
-.highlight {
-    color: #3498db;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #2980b9;
-}
-
-/* Container & Sections */
-.container {
-    padding: 80px 10%;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-/* Project Cards */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 15px;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Contact & Footer */
-.contact-info {
-    text-align: center;
-}
-
-.socials {
-    margin-top: 20px;
-}
-
-.socials a {
-    margin: 0 10px;
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #2c3e50;
-    color: white;
+    margin: 0 15px; /* Links ke darmiyan barabar space */
 }
