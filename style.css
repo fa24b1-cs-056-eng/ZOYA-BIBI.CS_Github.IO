@@ -1,5 +1,3 @@
-/* style.css is assume to be as provided before, with the following additions/modifications */
-
 /* General Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 body { background-color: #f0f2f5; color: #1a1a1b; }
@@ -15,35 +13,50 @@ nav ul li a:hover { color: #3498db; }
 .hero { height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1352&q=80'); background-size: cover; color: white; }
 .highlight { color: #3498db; }
 .btn { display: inline-block; margin-top: 20px; padding: 12px 35px; background: #3498db; color: white; text-decoration: none; border-radius: 30px; font-weight: 600; }
+.btn.secondary { background: transparent; border: 2px solid #3498db; margin-left: 10px; }
 
 /* About & Info Boxes */
 .about-me-section { padding: 80px 10%; text-align: center; }
-.section-title { font-size: 2.5rem; margin-bottom: 40px; color: #2c3e50; }
+.section-title { font-size: 2.5rem; margin-bottom: 40px; color: #2c3e50; text-align: center; }
+.intro-text { max-width: 1000px; margin: 0 auto 40px auto; color: #555; text-align: center; }
 .info-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .info-box { background: white; border-left: 6px solid #2c3e50; border-radius: 15px; padding: 30px; flex: 1; min-width: 300px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.info-box h3 { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 
-/* Skills */
+/* Technical Skills */
 .skills-section { padding: 80px 10%; background: #f8f9fa; text-align: center; }
 .skills-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.skill-card { background: white; padding: 25px; width: 150px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
+.skill-card { background: white; padding: 25px; width: 150px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s ease; }
+.skill-card:hover { transform: translateY(-8px); }
 .skill-card img { width: 50px; margin-bottom: 10px; }
 
-/* Certifications Professional Style */
-.cert-section { padding: 80px 10%; background: #ffffff; }
-.cert-card { display: flex; align-items: center; background: #ffffff; max-width: 900px; margin: 0 auto; border-radius: 20px; padding: 40px; gap: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; }
+/* --- Certifications Professional Style --- */
+.cert-section { padding: 100px 10%; background: #ffffff; }
+.cert-card { display: flex; align-items: center; background: #ffffff; max-width: 900px; margin: 0 auto; border-radius: 20px; padding: 40px; gap: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; transition: 0.3s ease; }
+.cert-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
 .cert-badge { flex: 1; text-align: center; }
-/* Google badge styling - modified to match provided images */
-.cert-badge img { width: 150px; height: auto; object-fit: contain;}
-/* Generic cert icon styling - modified to match provided images */
-.cert-badge img.generic-cert-icon { width: 80px; height: auto; object-fit: contain; color: #f1c40f;}
+.cert-badge img { width: 120px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); object-fit: contain; }
 
 .cert-info { flex: 2; }
-.cert-issuer { color: #3498db; text-transform: uppercase; font-weight: 700; font-size: 0.8rem; }
+.cert-issuer { color: #3498db; text-transform: uppercase; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; }
 .cert-info h3 { font-size: 1.8rem; margin: 10px 0; color: #2c3e50; }
-.cert-info p { color: #666; line-height: 1.6; margin-bottom: 20px; }
+.cert-info p { color: #666; line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem; }
+.cert-date { font-size: 0.8rem; color: #888; margin-top: 10px; display: flex; align-items: center; gap: 5px; }
+
 .cert-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border: 2px solid #3498db; border-radius: 50px; color: #3498db; font-weight: 600; text-decoration: none; transition: 0.3s; }
 .cert-btn:hover { background: #3498db; color: white; }
-.cert-date { font-size: 0.8rem; color: #888; margin-top: 15px; }
 
+/* Standard Container */
+.container { padding: 80px 10%; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.icon-box { font-size: 2.5rem; color: #3498db; margin-bottom: 20px; }
+.project-link { color: #3498db; text-decoration: none; font-weight: bold; }
+
+/* Footer */
 footer { padding: 40px; background: #2c3e50; color: white; text-align: center; }
-@media (max-width: 850px) { .cert-card { flex-direction: column; text-align: center; } }
+
+@media (max-width: 850px) {
+    .cert-card { flex-direction: column; text-align: center; padding: 30px; }
+}
