@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoya Bibi | Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Choti si extra styling taake skills cards ache lagen */
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,7 +30,6 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,7 +38,7 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Zoya Bibi</span></h1>
-            <p>Computer Science Student & Aspiring Full-Stack Developer</p>
+            <p>Computer Science Student & Aspiring Web Developer</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
@@ -34,104 +48,98 @@
 
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
-        <div class="about-content">
+        <div class="about-content" style="text-align: left; line-height: 1.8;">
             <p>
-                I am a passionate <strong>Computer Science student</strong> at <strong>Fatima Jinnah Women University (FJWU)</strong>. My journey into technology is driven by a deep-rooted curiosity for solving complex problems and building user-centric web applications. I thrive on the challenge of turning innovative ideas into functional, aesthetic, and efficient digital experiences.
+                Hello! I am <strong>Zoya Bibi</strong>, a dedicated Computer Science student at <strong>Fatima Jinnah Women University (FJWU)</strong>. My journey into technology is driven by a deep-rooted passion for solving complex problems and building user-centric web applications. I thrive on the challenge of turning ideas into functional, aesthetic, and efficient digital experiences.
             </p>
             
-            <div class="info-grid">
-                <div class="info-card">
-                    <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                    <p>Bachelor of Science in Computer Science<br>Fatima Jinnah Women University</p>
+            <div style="margin-top: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div class="info-card" style="background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #333;">
+                    <h4 style="color: #333;"><i class="fas fa-graduation-cap"></i> Education</h4>
+                    <p>BS Computer Science<br>Fatima Jinnah Women University</p>
                 </div>
-                <div class="info-card">
-                    <h4><i class="fas fa-rocket"></i> Interests</h4>
+                <div class="info-card" style="background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #333;">
+                    <h4 style="color: #333;"><i class="fas fa-rocket"></i> Interests</h4>
                     <p>Web Development, UI/UX Design, & Software Engineering</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="container dark-bg">
+    <section id="skills" class="container" style="background: #f4f7f6; padding: 60px 20px; border-radius: 20px;">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-flex">
-            <div class="skill-card">
-                <i class="fab fa-html5" style="color: #E34F26;"></i>
-                <p>HTML5</p>
+        <p style="text-align: center; margin-bottom: 40px;">Tools and technologies I am currently working with:</p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
+            
+            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <i class="fab fa-html5" style="font-size: 3rem; color: #E34F26;"></i>
+                <p style="margin-top: 15px; font-weight: 600; color: #333;">HTML5</p>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
-                <p>CSS3</p>
+
+            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <i class="fab fa-css3-alt" style="font-size: 3rem; color: #1572B6;"></i>
+                <p style="margin-top: 15px; font-weight: 600; color: #333;">CSS3</p>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-js" style="color: #F7DF1E;"></i>
-                <p>JavaScript</p>
+
+            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <i class="fab fa-js" style="font-size: 3rem; color: #F7DF1E;"></i>
+                <p style="margin-top: 15px; font-weight: 600; color: #333;">JavaScript</p>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-laptop-code" style="color: #004482;"></i>
-                <p>C++</p>
+
+            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <i class="fas fa-laptop-code" style="font-size: 3rem; color: #004482;"></i>
+                <p style="margin-top: 15px; font-weight: 600; color: #333;">C++</p>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-bootstrap" style="color: #7952B3;"></i>
-                <p>Bootstrap</p>
+
+            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <i class="fab fa-bootstrap" style="font-size: 3rem; color: #7952B3;"></i>
+                <p style="margin-top: 15px; font-weight: 600; color: #333;">Bootstrap</p>
             </div>
+
         </div>
     </section>
 
-    <section id="certifications" class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-box">
-            <div class="cert-image">
-                <img src="google-ai-cert.png" alt="Google AI Essentials Certificate">
-            </div>
-            <div class="cert-info">
-                <h3>Google AI Essentials</h3>
-                <span class="issuer">Issued by Google | Coursera</span>
-                <p>
-                    Completed an intensive program focused on the fundamentals of Generative AI and productivity enhancement. This certification validates my ability to use AI tools effectively while maintaining ethical standards in software development.
-                </p>
-                <div class="cert-highlights">
-                    <span><i class="fas fa-check"></i> Advanced Prompt Engineering</span>
-                    <span><i class="fas fa-check"></i> AI-Powered Productivity Tools</span>
-                    <span><i class="fas fa-check"></i> Responsible & Ethical AI Integration</span>
-                </div>
-                <a href="#" class="btn-small">Verify Credential</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="container dark-bg">
+    <section id="projects" class="container">
         <h2 class="section-title">My Projects</h2>
         <div class="project-grid">
+            
             <div class="card">
                 <div class="icon-box"><i class="fas fa-code"></i></div>
                 <h3>Personal Portfolio</h3>
-                <p>A professional web application designed to showcase my technical skills, academic background, and projects.</p>
-                <a href="https://github.com/fa24b1-cs-056-eng/ZOYA-BIBI.CS_Github.IO" class="project-link" target="_blank">View Repository</a>
+                <p>A professional portfolio website built and hosted on GitHub Pages to showcase my skills and academic journey.</p>
+                <a href="https://github.com/fa24b1-cs-056-eng/ZOYA-BIBI.CS_Github.IO" class="project-link" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <div class="card">
                 <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
                 <h3>Upcoming Project</h3>
-                <p>Currently developing dynamic web solutions as part of my advanced coursework at FJWU.</p>
-                <a href="#" class="project-link">Development in Progress</a>
+                <p>Currently working on new web development assignments and exploring software engineering principles at FJWU.</p>
+                <a href="#" class="project-link">Coming Soon...</a>
             </div>
+
         </div>
     </section>
 
     <section id="contact" class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-info">
-            <p>I am always open to discussing new opportunities, collaborations, or creative ideas.</p>
-            <p class="email"><strong><i class="fas fa-envelope"></i> fa24b1-cs-056@fjwu.edu.pk</strong></p>
+            <p>I am always open to discussing new projects or creative ideas. Feel free to connect with me!</p>
+            <p style="margin: 20px 0; font-size: 1.1rem;"><strong><i class="fas fa-envelope"></i> fa24b1-cs-056@fjwu.edu.pk</strong></p>
+            
             <div class="socials">
-                <a href="https://github.com/fa24b1-cs-056-eng" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/fa24b1-cs-056-eng" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Zoya Bibi | Computer Science Portfolio</p>
+        <p>&copy; 2024 Zoya Bibi | FJWU Computer Science Student</p>
     </footer>
 
     <script src="script.js"></script>
