@@ -4,24 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoya Bibi | Portfolio</title>
-    
     <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
-        /* Choti si extra styling taake skills cards ache lagen */
-        .skill-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .skill-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
-        }
-    </style>
 </head>
 <body>
 
@@ -30,6 +15,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -37,111 +23,90 @@
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Zoya Bibi</span></h1>
-            <p>Computer Science Student & Aspiring Web Developer</p>
+            <h1>Hi, I'm Zoya Bibi</h1>
+            <p>Computer Science Student & Aspiring Full-Stack Developer</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+                <a href="#projects" class="view-work">View My Work</a>
+                <a href="#contact" class="contact-me">Contact Me</a>
             </div>
         </div>
     </header>
 
     <section id="about" class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content" style="text-align: left; line-height: 1.8;">
-            <p>
-                Hello! I am <strong>Zoya Bibi</strong>, a dedicated Computer Science student at <strong>Fatima Jinnah Women University (FJWU)</strong>. My journey into technology is driven by a deep-rooted passion for solving complex problems and building user-centric web applications. I thrive on the challenge of turning ideas into functional, aesthetic, and efficient digital experiences.
-            </p>
-            
-            <div style="margin-top: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <div class="info-card" style="background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #333;">
-                    <h4 style="color: #333;"><i class="fas fa-graduation-cap"></i> Education</h4>
-                    <p>BS Computer Science<br>Fatima Jinnah Women University</p>
-                </div>
-                <div class="info-card" style="background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #333;">
-                    <h4 style="color: #333;"><i class="fas fa-rocket"></i> Interests</h4>
-                    <p>Web Development, UI/UX Design, & Software Engineering</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="container" style="background: #f4f7f6; padding: 60px 20px; border-radius: 20px;">
-        <h2 class="section-title">Technical Skills</h2>
-        <p style="text-align: center; margin-bottom: 40px;">Tools and technologies I am currently working with:</p>
+        <h2>About Me</h2>
+        <p>Hello! I am <strong>Zoya Bibi</strong>, a dedicated Computer Science student at <strong>Fatima Jinnah Women University (FJWU)</strong>. My journey into technology is driven by a deep-rooted passion for solving complex problems and building user-centric web applications. Currently, I am focusing on mastering modern web technologies while maintaining a strong academic foundation in software engineering principles.</p>
         
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
-            
-            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <i class="fab fa-html5" style="font-size: 3rem; color: #E34F26;"></i>
-                <p style="margin-top: 15px; font-weight: 600; color: #333;">HTML5</p>
+        <div class="about-info">
+            <div class="info-item">
+                <h4>🎓 Education</h4>
+                <p>BS Computer Science<br>Fatima Jinnah Women University</p>
             </div>
-
-            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <i class="fab fa-css3-alt" style="font-size: 3rem; color: #1572B6;"></i>
-                <p style="margin-top: 15px; font-weight: 600; color: #333;">CSS3</p>
+            <div class="info-item">
+                <h4>🚀 Interests</h4>
+                <p>Web Development, UI/UX Design, & Software Engineering</p>
             </div>
-
-            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <i class="fab fa-js" style="font-size: 3rem; color: #F7DF1E;"></i>
-                <p style="margin-top: 15px; font-weight: 600; color: #333;">JavaScript</p>
-            </div>
-
-            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <i class="fas fa-laptop-code" style="font-size: 3rem; color: #004482;"></i>
-                <p style="margin-top: 15px; font-weight: 600; color: #333;">C++</p>
-            </div>
-
-            <div class="skill-card" style="text-align: center; width: 140px; padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <i class="fab fa-bootstrap" style="font-size: 3rem; color: #7952B3;"></i>
-                <p style="margin-top: 15px; font-weight: 600; color: #333;">Bootstrap</p>
-            </div>
-
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project-grid">
-            
-            <div class="card">
-                <div class="icon-box"><i class="fas fa-code"></i></div>
-                <h3>Personal Portfolio</h3>
-                <p>A professional portfolio website built and hosted on GitHub Pages to showcase my skills and academic journey.</p>
-                <a href="https://github.com/fa24b1-cs-056-eng/ZOYA-BIBI.CS_Github.IO" class="project-link" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="card">
-                <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-                <h3>Upcoming Project</h3>
-                <p>Currently working on new web development assignments and exploring software engineering principles at FJWU.</p>
-                <a href="#" class="project-link">Coming Soon...</a>
-            </div>
-
+    <section id="skills" class="container grey-bg">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"><span>JavaScript</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+            <div class="skill-item"><i class="fas fa-palette" style="font-size: 40px; color: #00c4cc;"></i><span>Canva</span></div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-info">
-            <p>I am always open to discussing new projects or creative ideas. Feel free to connect with me!</p>
-            <p style="margin: 20px 0; font-size: 1.1rem;"><strong><i class="fas fa-envelope"></i> fa24b1-cs-056@fjwu.edu.pk</strong></p>
-            
-            <div class="socials">
-                <a href="https://github.com/fa24b1-cs-056-eng" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+    <section id="certifications" class="container">
+        <h2>Certifications</h2>
+        
+        <div class="cert-card">
+            <div class="cert-text">
+                <h3>Google AI Essentials</h3>
+                <p class="issuer">Issued by Google | Coursera</p>
+                <p>Maine Google AI Essentials program mukammal kiya hai, jis mein Generative AI ke bunyadi usool aur productivity tools ko seekha.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Prompt Engineering</li>
+                    <li><i class="fas fa-check"></i> AI Productivity Tools</li>
+                    <li><i class="fas fa-check"></i> Ethical AI Use</li>
+                </ul>
+                <a href="https://coursera.org/verify/specialization/9OTBVCI0T7NP" target="_blank" class="verify-btn">Verify Credential</a>
             </div>
+            <img src="Google AI Essential.jpeg" alt="Google Certificate">
+        </div>
+
+        <div class="cert-card reverse">
+            <div class="cert-text">
+                <h3>Certificate of Participation</h3>
+                <p class="issuer">FJWU Character Building Society | Data Crumb</p>
+                <p>Actively participated in the webinar "Empowering youth through skill-based learning and mentorship".</p>
+                <ul>
+                    <li><i class="fas fa-calendar-alt"></i> Dec 2nd, 2025</li>
+                    <li><i class="fas fa-brain"></i> AI, Python & Data Science</li>
+                </ul>
+            </div>
+            <img src="image_e631ee.jpg" alt="Participation Certificate">
+        </div>
+    </section>
+
+    <section id="contact" class="container grey-bg">
+        <h2>Get In Touch</h2>
+        <p>I am always open to new opportunities and creative ideas!</p>
+        <p class="email-text">📧 <strong>fa24b1-cs-056@fjwu.edu.pk</strong></p>
+        <div class="social-links">
+            <a href="https://github.com/fa24b1-cs-056-eng" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Zoya Bibi | FJWU Computer Science Student</p>
+        <p>&copy; 2024 Zoya Bibi | FJWU Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
