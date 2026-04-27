@@ -17,7 +17,7 @@ nav ul li a:hover { color: #3498db; }
 
 /* About & Info Boxes */
 .about-me-section { padding: 80px 10%; text-align: center; }
-.section-title { font-size: 2.5rem; margin-bottom: 40px; color: #2c3e50; text-align: center; }
+.section-title { font-size: 2.5rem; margin-bottom: 20px; color: #2c3e50; text-align: center; }
 .intro-text { max-width: 1000px; margin: 0 auto 40px auto; color: #555; text-align: center; }
 .info-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .info-box { background: white; border-left: 6px solid #2c3e50; border-radius: 15px; padding: 30px; flex: 1; min-width: 300px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
@@ -30,19 +30,17 @@ nav ul li a:hover { color: #3498db; }
 .skill-card:hover { transform: translateY(-8px); }
 .skill-card img { width: 50px; margin-bottom: 10px; }
 
-/* --- Certifications Professional Style --- */
+/* Certifications Professional Style */
 .cert-section { padding: 100px 10%; background: #ffffff; }
 .cert-card { display: flex; align-items: center; background: #ffffff; max-width: 900px; margin: 0 auto; border-radius: 20px; padding: 40px; gap: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; transition: 0.3s ease; }
 .cert-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
 .cert-badge { flex: 1; text-align: center; }
 .cert-badge img { width: 120px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); object-fit: contain; }
-
 .cert-info { flex: 2; }
 .cert-issuer { color: #3498db; text-transform: uppercase; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; }
 .cert-info h3 { font-size: 1.8rem; margin: 10px 0; color: #2c3e50; }
 .cert-info p { color: #666; line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem; }
 .cert-date { font-size: 0.8rem; color: #888; margin-top: 10px; display: flex; align-items: center; gap: 5px; }
-
 .cert-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border: 2px solid #3498db; border-radius: 50px; color: #3498db; font-weight: 600; text-decoration: none; transition: 0.3s; }
 .cert-btn:hover { background: #3498db; color: white; }
 
@@ -54,9 +52,59 @@ nav ul li a:hover { color: #3498db; }
 .icon-box { font-size: 2.5rem; color: #3498db; margin-bottom: 20px; }
 .project-link { color: #3498db; text-decoration: none; font-weight: bold; }
 
+/* --- Get In Touch Section Styling --- */
+.get-in-touch {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.contact-text {
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-email {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1b;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-link-btn {
+    padding: 10px 25px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.social-link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: #3498db;
+    color: #3498db;
+}
+
 /* Footer */
-footer { padding: 40px; background: #2c3e50; color: white; text-align: center; }
+footer { padding: 40px; background: #2c3e50; color: white; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
 
 @media (max-width: 850px) {
     .cert-card { flex-direction: column; text-align: center; padding: 30px; }
+    .contact-links { flex-direction: column; align-items: center; }
 }
