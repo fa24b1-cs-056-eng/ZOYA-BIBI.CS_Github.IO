@@ -1,3 +1,5 @@
+/* style.css is assume to be as provided before, with the following additions/modifications */
+
 /* General Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 body { background-color: #f0f2f5; color: #1a1a1b; }
@@ -30,7 +32,11 @@ nav ul li a:hover { color: #3498db; }
 .cert-section { padding: 80px 10%; background: #ffffff; }
 .cert-card { display: flex; align-items: center; background: #ffffff; max-width: 900px; margin: 0 auto; border-radius: 20px; padding: 40px; gap: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; }
 .cert-badge { flex: 1; text-align: center; }
-.cert-badge img { width: 120px; }
+/* Google badge styling - modified to match provided images */
+.cert-badge img { width: 150px; height: auto; object-fit: contain;}
+/* Generic cert icon styling - modified to match provided images */
+.cert-badge img.generic-cert-icon { width: 80px; height: auto; object-fit: contain; color: #f1c40f;}
+
 .cert-info { flex: 2; }
 .cert-issuer { color: #3498db; text-transform: uppercase; font-weight: 700; font-size: 0.8rem; }
 .cert-info h3 { font-size: 1.8rem; margin: 10px 0; color: #2c3e50; }
