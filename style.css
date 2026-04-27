@@ -1,97 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* Ensuring certificate images look consistent */
+.cert-card img {
+    width: 350px; /* Increased slightly for better visibility */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
 }
 
-body {
-    background-color: #ffffff;
-    color: #333;
-    line-height: 1.6;
+.cert-card img:hover {
+    transform: scale(1.03);
 }
 
-/* Nav previous style */
-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 5%;
-    background-color: #1a252f;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.cert-card.reverse {
+    flex-direction: row-reverse; /* Keeps the alternating look of your previous design */
 }
 
-nav ul { display: flex; list-style: none; }
-nav ul li { margin-left: 20px; }
-nav ul li a { color: #fff; text-decoration: none; font-size: 14px; }
-
-/* Hero previous style */
-.hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image_e5dac2.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+/* List styling inside certificates */
+.cert-text ul {
+    list-style: none;
+    margin: 15px 0;
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 10px; }
-.hero-btns { margin-top: 20px; }
-.hero-btns a {
-    text-decoration: none; padding: 10px 20px; border-radius: 5px; margin: 0 10px; color: white;
-}
-.view-work { background-color: #3498db; }
-.contact-me { border: 1px solid white; }
-
-/* General container style */
-.container { padding: 60px 10%; }
-.grey-bg { background-color: #f9f9f9; }
-h2 { margin-bottom: 30px; font-size: 2rem; }
-
-/* About items style */
-.about-info { display: flex; gap: 40px; margin-top: 30px; }
-.info-item h4 { margin-bottom: 10px; }
-
-/* Skills Grid (Previous) */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.skill-item {
-    background: white; padding: 20px; border-radius: 10px;
-    width: 120px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-.skill-item img { width: 40px; margin-bottom: 10px; }
-
-/* Certifications Style (Previous) */
-.cert-card {
-    display: flex; align-items: center; gap: 30px; margin-bottom: 40px;
-    background: #fff; padding: 20px; border-radius: 10px;
-}
-.cert-card.reverse { flex-direction: row-reverse; }
-.cert-card img { width: 300px; border-radius: 5px; }
-.cert-text { flex: 1; }
-.verify-btn { 
-    display: inline-block; margin-top: 15px; padding: 8px 15px;
-    background: #3498db; color: white; text-decoration: none; border-radius: 5px;
-}
-
-/* Contact Style (Previous) */
-.email-text { margin: 20px 0; font-size: 1.2rem; }
-.social-links { display: flex; gap: 15px; }
-.social-btn {
-    text-decoration: none; color: #333; padding: 8px 15px;
-    border: 1px solid #ddd; border-radius: 20px;
-}
-
-footer { background: #1a252f; color: white; text-align: center; padding: 20px; }
-
-@media (max-width: 768px) {
-    .cert-card, .cert-card.reverse { flex-direction: column; }
-    .about-info { flex-direction: column; }
+.cert-text ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
 }
