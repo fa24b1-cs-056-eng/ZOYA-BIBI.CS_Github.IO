@@ -15,7 +15,7 @@ body {
 /* Navigation - Centered to Right Move */
 nav {
     display: flex !important;
-    justify-content: flex-end !important; /* This moves it to the right */
+    justify-content: flex-end !important;
     align-items: center;
     padding: 20px 10%;
     background: #2c3e50;
@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 30px; /* Space between links */
+    margin-left: 30px;
 }
 
 nav ul li a {
@@ -85,7 +85,56 @@ nav ul li a:hover {
     background: #2980b9;
 }
 
-/* Container & Sections */
+/* Updated About Me Section (Matches Image) */
+.about-me-section {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f4f7f6;
+}
+
+.intro-text {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background: #ffffff;
+    border-left: 5px solid #222; /* Black accent bar */
+    border-radius: 15px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.info-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #222;
+}
+
+.info-box p {
+    margin: 5px 0;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Container & General Sections */
 .container {
     padding: 80px 10%;
 }
@@ -156,4 +205,14 @@ footer {
     padding: 20px;
     background: #2c3e50;
     color: white;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+    .info-box {
+        max-width: 100%;
+    }
 }
